@@ -7,7 +7,7 @@ const PORT = 3001;
 const app = express();
 const cors = require('cors');
 const corsOptions ={
-    origin:'http://localhost:3000', 
+    origin:'https://master--phenomenal-cobbler-6ab0f4.netlify.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
