@@ -6,7 +6,7 @@ const {PORT} = require('./configdos')
 const app = express();
 const cors = require('cors');
 const corsOptions ={
-    origin:'https://master--phenomenal-cobbler-6ab0f4.netlify.app/', 
+    origin:'https://phenomenal-cobbler-6ab0f4.netlify.app', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
@@ -19,9 +19,8 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(userRoutes)
 app.use(productRoutes)
-// app.use(cors({
 
-// }));
+
 app.listen(PORT, () => {
     console.log(`El servidor está trabajando en el Puerto ${PORT}`)
 
